@@ -17,21 +17,27 @@ In addition, another objective of the report was to design a statistical study t
 
 The following subsections discusses the main findings from the conducted statistical analysis.
 
-#### Linear Regression to Predict MPG
+### Linear Regression to Predict MPG
 
 The general form of the multiple linear regression model is:
 
-y = β~0~ + X~1~β~1~ + X~2~β~2~ +...+X~k~β~k~
+y = β<sub>0</sub>  + X<sub>1</sub>β<sub>1</sub> + X<sub>2</sub>β<sub>2</sub> + ... + X<sub>k</sub>β<sub>k</sub>
 
-where, y denotes the dependent variable, in our study case mpg, that is linearly related to the k~th~ independent (or explanatory) variables X~1~, X~2~,...,X~k~ through the parameters β~1~, β~2~,...,β~k~.
+where, y denotes the dependent variable, in our study case mpg, that is linearly related to the k<sub>th</sub> independent (or explanatory) variables X<sub>1</sub>, X<sub>2</sub>, ... , X<sub>k</sub> through the parameters β<sub>1</sub>, β<sub>2</sub>, ... , β<sub>k</sub>.
 
-The parameters β~k~ are the regression coefficient output from the statistical analysis as shown in Figure 1 below, associated with the independent variables vehicle weight, vehicle_length, spoiler_angle, ground_clearance and AWD. In general the model is predicting how the mpg (miles per gallon) will change with respect to these independent varables. 
+The parameters β<sub>k</sub> are the regression coefficient output from the statistical analysis as shown in Figure 1 below, associated with the independent variables vehicle weight, vehicle_length, spoiler_angle, ground_clearance and AWD. In general the model is predicting how the mpg (miles per gallon) will change with respect to these independent varables. 
 
 Based on the regression coefficients shown in Figure 1, the vehicle length and vehicle ground clearance are likely to provide non-random amounts of variance to the model. That is, the vehicle length and vehicle ground clearance have a greater impact on mpg of the MechaCar prototype. This is supported by the very low p-values (in the pr column) output shown in Figure 2 at the 0.1% statisctical level. In contrast, the vehicle weight, spoiler angle, and AWD have higher p-Values (p-value > 0.05) which indicate they are more likely to contribute a random amount of variance with the dataset.
 
 Figure 1.
 
+<img width="464" alt="Img1" src="https://user-images.githubusercontent.com/92636438/154866666-35f0ebdd-600c-422c-99e2-84946612a7e3.png">
+
+
 Figure 2.
+
+<img width="462" alt="Img2" src="https://user-images.githubusercontent.com/92636438/154866677-ebb50ea8-514b-4bd1-9284-e9477c2ab520.png">
+
 
 The slope of the linear model cannot be zero and is estimated to be -104 as shown in Figure 1. The evidence that further supports a non-zero slope is the very small p-value when compared at the 0.1% significane level. 
 
@@ -43,7 +49,12 @@ The weight capacities of multiple suspension coils were tested to determine if t
  
 Figure 3.
 
+<img width="253" alt="Img3" src="https://user-images.githubusercontent.com/92636438/154866690-7a9f7b12-569c-4126-87c7-df113973e5bb.png">
+
+
 Figure 4. 
+
+<img width="355" alt="Img4" src="https://user-images.githubusercontent.com/92636438/154866701-284c222b-339e-4dc9-adc3-b2c71f51242e.png">
 
 
 As can be observed from Figure 3, considering all manufacturing lots, with a variance of 62.29 this criteria is meet. However, per individual lot (see Figure 4), while Lot 1 and 2 are within the design specifications, Lot 3 exceeds the allowed variation threshold by 70%. 
@@ -52,17 +63,31 @@ As can be observed from Figure 3, considering all manufacturing lots, with a var
 
 For this study it was important to determine if the mean PSI of the manufacturing lots are statistically different from the population mean of 1500 PSI. The following points highlight the most important results.
 
-* Across all manufacturing lots, the recorded p-value is 0.06 is greater than the tested significance level of 0.05, therefore then we fail to reject the null hypothesis.  This implies that there is no significant difference between the sample mean and the population mean PSI of 1500. See Figure 5 below.
+* Across all manufacturing lots, the recorded p-value is 0.06 is greater than the tested significance level of 0.05, then we fail to reject the null hypothesis.  This implies that there is no significant difference between the sample mean and the population mean PSI of 1500. See Figure 5 below.
 
 Figure 5
+
+<img width="370" alt="Img5" src="https://user-images.githubusercontent.com/92636438/154866737-973dcf96-b2e6-4bd0-a073-7d488a2c90c1.png">
+
 
 * For Lots 1 and 2 the calculated p-statistics is 1 and 0.61, respectively. Since this is greater than the significance level of 0.05, therefore then we fail to reject the null hypothesis.  This implies that there is no significant difference between the sample mean and the population mean PSI of 1500. See Figures 6 and 7 below.
 
 Figure 6
 
+<img width="370" alt="Img6" src="https://user-images.githubusercontent.com/92636438/154866753-9d400c53-2e5b-4cb6-b69f-0e9403ec03b5.png">
+
 Figure 7
 
-* For Lot 3 the p-value (=0.04) is less than significance level of 0.05, therfore we can reject the null hypothesis. This implies that the alternative hypothesis is correct and that the data is significant. The statical result of the t-test is shown in Figure 8 below.
+<img width="379" alt="Img7" src="https://user-images.githubusercontent.com/92636438/154866768-517ad4ad-93db-491e-a517-fcd231dc01b3.png">
+
+
+* For Lot 3 the p-value (= 0.04) is less than the 0.05, therfore we can reject the null hypothesis. This implies that the alternative hypothesis is correct and that the data is significant. The statical result of the t-test is shown in Figure 8 below.
+
+Figure 8
+
+<img width="364" alt="Img8" src="https://user-images.githubusercontent.com/92636438/154866785-185c4671-550e-461d-a33f-abfa4328629b.png">
+
+
 
 ## Study Design: MechaCar vs Competition
 
